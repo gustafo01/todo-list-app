@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.navBtn {
+  margin-left: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.sidebar {
+  background-color: rgb(240, 240, 240);
+  padding: 30px 30px 30px 10px;
+}
+
+.sidebarNav li {
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.sidebarNav a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.sidebarNav a:hover {
+  background-color: rgb(108, 198, 167);
+  border-radius: 5px;
+}
+
+.selectedDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.navBar {
+  background-color: rgb(108, 198, 167);
+  padding: 20px 0;
+}
+
+.oneTask {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(182, 182, 182);
+  padding: 0 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: grab;
+  background-color: white;
+}
+
+.priority {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.priority.red {
+  border-color: brown;
+  background-color: rgba(255, 0, 0, 0.15);
+}
+
+.priority.green {
+  border-color: greenyellow;
+  background-color: rgba(172, 255, 47, 0.15);
+}
+
+.priority.gray {
+  border-color: gray;
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+.priorityList {
+  display: flex;
+}
+
+.priorityList li {
+  margin-right: 15px;
+}
+
+.addBtnsModal {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.addBtnsModal button {
+  margin-left: 30px;
+}
+
+.calendarWrap {
+  padding: 0 30px;
+}
+
+.events li {
+  display: flex;
+}
